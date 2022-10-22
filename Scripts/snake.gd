@@ -46,7 +46,7 @@ func Walk(_direction : Vector2):
 	already_moved = false
 
 func AddToSnake(_pos : Vector2):
-	var _del = Vector2(-1, -1)
+	var _del = Vector2(-30, -30)
 	snake.push_front(_pos)
 	if snake.size() > size:
 		_del = snake.pop_back()
